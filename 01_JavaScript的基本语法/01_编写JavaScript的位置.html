@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- 1.编写位置：写在html内部 -->
+  <a href="#" onclick="alert('baidu')">百度一下</a>
+
+  <!-- 2.编写位置：写在script元素之内 -->
+  <a href="#" class="google">google</a>
+  <script>
+    // querySelector()方法返回文档中匹配指定CSS选择器的一个元素
+    // querySelector()返回的是一个元素对象，如果是多个元素，只返回第一个
+    // querySelectorAll()方法返回文档中匹配指定CSS选择器的所有元素
+    // querySelectorAll()返回的是一个NodeList对象，可以通过索引来访问
+    var google = document.querySelector('.google');
+    google.onclick = function(){
+      alert('google');
+    }
+  </script>
+
+  <!-- 3.编写位置：写在其他文件 -->
+  <a href="#" class="bing">Bing</a>
+  <script src="./js/bing.js"></script>
+  
+</body>
+</html>
