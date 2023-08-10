@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <script>
+    // 未声明变量使用报错，后面代码不执行
+    // console.log(b);
+    var a = 10;
+    console.log(a);
+    // var name = "123"
+    // name 很特殊，命名一次，就把windows下的name属性给覆盖了，所以不要用name作为变量名
+    // 重新打开窗口，name属性又变回去了
+    console.log(name);
+
+    // 不用var声明的变量，也可以复制成功，会被加载到window下
+    // 用var声明的，也在 window下
+    b = 20;
+    console.log(b);
+
+
+
+  </script>
+  
+</body>
+</html>
