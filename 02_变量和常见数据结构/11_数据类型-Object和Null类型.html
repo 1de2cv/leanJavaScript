@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+    // 定义多个变量来表示一个事物太复杂，然后有了Object
+    // Object是一种复合的数据类型，可以用来保存多个不同数据类型的数据
+    // Object是由多个键值对组成的
+    // 键值对：key: value
+    // 键值对之间使用逗号分隔
+    var book = {
+      // 属性
+      name: "JavaScript高级程序设计",
+      'price': 99,
+      "publisher": "人民邮电出版社",
+    }
+
+    // 获取对象中的属性
+    // 1. 对象.属性名
+    console.log(book.name);
+    // 2. 对象["属性名"]
+    console.log(book["price"]);
+    // 3. 如果属性名是一个变量，那么就只能使用第二种方式
+    // 因为他去找属姓名的值，而不是去找变量值的值
+    // [变量名] 先根据变量名找到变量值，然后再根据变量值去找属性值
+    var key = "publisher";
+    console.log(book[key]);
+
+    var te = "2";
+    var te2 = {
+      "2": "3",
+      "te": "4"
+    }
+    console.log(te2);
+
+    // 当使用.length方法 包装成一个对象 String (原生类型的包装类)类型的对象
+    var message = "name";
+    console.log(message.length);
+
+
+    // 对象类型初始化时，不建议初始化为{}，建议初始化为null
+    // 因为null是一个特殊的对象，表示定义了，但是值为空
+    // 而{}表示定义了，但是没有值
+    var obj = null;
+
+    
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+  </script>
+
+
+
+</body>
+</html>

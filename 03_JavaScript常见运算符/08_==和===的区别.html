@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+
+    var foo1 = 123
+    var foo2 = '123'
+
+    // 《javascript.info》
+    // == 在类型不相等的情况下，会自动转换数据类型（转换成Number类型），再比较
+    // null 比较特殊: null在进行比较的时候，只和 undefined 相等
+    // 对比 0 和 "0", "" , (null 是例外)
+    console.log(foo1 == foo2) // true
+
+    // === 不会自动转换数据类型
+    console.log(foo1 === foo2) // false
+
+
+
+
+
+  </script>
+
+
+</body>
+</html>
