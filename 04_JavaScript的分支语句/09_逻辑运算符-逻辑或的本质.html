@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+    /**
+     *     
+        脱离分支语句，单独使用 
+        条件1 || 条件2 || 条件3
+        1. 先将运算元转成Boolean类型
+        2. 对转成的Boolean类型进行判断，
+          - 如果为true，直接将结果(元类型)返回
+          - 如果为false，进行第二个运算元的判断
+          - 以此类推
+        3. 如果找到最后还没有找到，返回最后一个运算元
+        (是指逻辑运算符两边的，比如 a > 12 会返回 ture，a > 12 算一个运算元)，
+      */
+
+    var info = "abc"
+    var res = info || "默认值"
+    console.log(res) // abc
+
+
+
+
+  </script>
+</body>
+</html>

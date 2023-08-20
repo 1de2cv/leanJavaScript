@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+
+    console.log("" == null)
+
+    var info = {
+      name: "why",
+      age: 18,
+      // 重写方法
+      [Symbol.toPrimitive]() {
+        return 123
+      }
+
+
+    }
+
+    // 抽象相等
+    console.log(info == 123)
+
+
+
+
+  </script>
+
+
+
+</body>
+</html>

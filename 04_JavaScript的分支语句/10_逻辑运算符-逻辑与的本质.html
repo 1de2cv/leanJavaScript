@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+    // 条件1 && 条件2 && 条件3
+
+    // 本质推导2: 对一些对象中的方法进行有值判断
+    var obj = {
+      name: 'zs',
+      friend: {
+        name: 'ls',
+        eat: function() {
+          console.log('eat')
+        }
+      }
+    }
+    // obj.friend.eat()
+    obj && obj.friend && obj.friend.eat && obj.friend.eat()
+
+
+
+
+
+  </script>
+</body>
+</html>
